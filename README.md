@@ -37,6 +37,14 @@ BenchmarkRunner.Run<BenchmarkLinq>();
 
 Os resultados são exibidos automaticamente no terminal após executar os benchmarks.
 
+## Exemplos
+
+<img width="734" height="116" alt="image" src="https://github.com/user-attachments/assets/328f616b-44bf-4f71-9c3c-728a8a7bf8ec" />
+
+<img width="803" height="155" alt="image" src="https://github.com/user-attachments/assets/c6b4c589-ce01-4aa3-a7bb-ec35a1704a57" />
+
+`Mean` indica a média aritmética das execuções
+
 ## Licença
 
 Este projeto está disponível sob a Licença MIT.
