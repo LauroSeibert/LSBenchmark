@@ -3,6 +3,7 @@ using BenchmarkDotNet.Jobs;
 
 namespace LSBenchmark.Benchmarks;
 
+[SimpleJob(RuntimeMoniker.Net60, baseline: true)]
 [SimpleJob(RuntimeMoniker.Net90)]
 [MemoryDiagnoser]
 public class BenchmarkFinds
@@ -26,14 +27,14 @@ public class BenchmarkFinds
         var target = ItemCount / 2;
         return _numbers.Find(x => x == target);
     }
-    
+
     [Benchmark]
     public int FirstOrDefault()
     {
         var target = ItemCount / 2;
         return _numbers.FirstOrDefault(x => x == target);
     }
-    
+
     [Benchmark]
     public int FindWithForLoop()
     {
@@ -45,7 +46,7 @@ public class BenchmarkFinds
         }
         return 0;
     }
-    
+
     [Benchmark]
     public int FindWithForeachLoop()
     {
